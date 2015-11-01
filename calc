@@ -1,0 +1,27 @@
+import java.util.*;
+public class lol {
+    public static Scanner reader = new Scanner(System.in);
+
+    public static double main(String[] args) {
+
+        System.out.print("Vvedite pervoe 4islo=");
+        double d = reader.nextDouble();
+        System.out.print("Vvedite vtoroe 4islo=");
+        double k = reader.nextDouble();
+        double s, v, u, de;
+        s = d + k;
+        v = d - k;
+        u = d * k;
+        System.out.println("Summa=" + s);
+        System.out.println("Vu4itanie=" + v);
+        System.out.println("Umnojenie=" + u);
+        if (k != 0) {
+            de = d / k;
+            System.out.println("Delenie=" + de);
+        } else {
+            System.out.println("Na 0 delit nelzya");
+        }
+
+        return d;
+    }
+}
